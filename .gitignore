@@ -1,0 +1,4 @@
+# Project exclude paths
+/ae-1473-ricardo-sarango/.gradle/
+/ae-1473-ricardo-sarango/build/
+/ae-1473-ricardo-sarango/build/classes/kotlin/main/

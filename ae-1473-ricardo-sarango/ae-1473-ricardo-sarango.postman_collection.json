@@ -1,0 +1,47 @@
+{
+  "info": {
+    "name": "ae-1473-ricardo-sarango",
+    "_postman_id": "ae1473-exam1-collection",
+    "description": "Colección para el examen AE-1473 — API de libros",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST /api/books — Crear libro",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"  el principito  \",\n  \"author\": \"antoine de saint-exupery\",\n  \"priceUsd\": 10.0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8787/api/books",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8787",
+          "path": ["api", "books"]
+        }
+      }
+    },
+    {
+      "name": "GET /api/books — Listar libros",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8787/api/books",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8787",
+          "path": ["api", "books"]
+        }
+      }
+    }
+  ]
+}
