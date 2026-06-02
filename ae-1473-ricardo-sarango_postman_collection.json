@@ -1,0 +1,146 @@
+{
+  "info": {
+    "name": "ae-1473-ricardo-sarango",
+    "_postman_id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+    "description": "Colección de endpoints para el examen AE-1473 — Books API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST /api/books — Crear libro",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"  el principito  \",\n  \"author\": \"antoine de saint-exupery\",\n  \"priceUsd\": 10.0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8787/api/books",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8787",
+          "path": ["api", "books"]
+        },
+        "description": "Crea un nuevo libro. El título y autor se normalizan, se calcula el slug y el precio final con IVA."
+      },
+      "response": []
+    },
+    {
+      "name": "POST /api/books — Harry Potter y la piedra filosofal",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"  harry potter y la piedra filosofal  \",\n  \"author\": \"j.k. rowling\",\n  \"priceUsd\": 12.99\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8787/api/books",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8787",
+          "path": ["api", "books"]
+        },
+        "description": "Crea el libro Harry Potter y la piedra filosofal (libro 1)."
+      },
+      "response": []
+    },
+    {
+      "name": "POST /api/books — Harry Potter y la cámara secreta",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"  harry potter y la camara secreta  \",\n  \"author\": \"j.k. rowling\",\n  \"priceUsd\": 12.99\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8787/api/books",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8787",
+          "path": ["api", "books"]
+        },
+        "description": "Crea el libro Harry Potter y la cámara secreta (libro 2)."
+      },
+      "response": []
+    },
+    {
+      "name": "POST /api/books — Harry Potter y el prisionero de Azkaban",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"  harry potter y el prisionero de azkaban  \",\n  \"author\": \"j.k. rowling\",\n  \"priceUsd\": 13.99\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8787/api/books",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8787",
+          "path": ["api", "books"]
+        },
+        "description": "Crea el libro Harry Potter y el prisionero de Azkaban (libro 3)."
+      },
+      "response": []
+    },
+    {
+      "name": "GET /api/books — Listar libros",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8787/api/books",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8787",
+          "path": ["api", "books"]
+        },
+        "description": "Retorna todos los libros ordenados alfabéticamente por título."
+      },
+      "response": []
+    }
+  ]
+}
